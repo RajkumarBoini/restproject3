@@ -14,13 +14,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from restapp3.views import ProductApiView,HomeView,InsertInput,InsertView,DisplayView,DeleteInputView,DeleteView,UpdateInputView,UpdateView
+from restapp3.views import ProductApiView,HomeView,InsertInput,InserView,DisplayView,DeleteInputView,DeleteView,UpdateInputView,UpdateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('modelapp/',HomeView.as_view()),
     path('modelapp/insertinput/',InsertInput.as_view()),
-    path('modelapp/insertinput/insert/',InsertView.as_view()),
+    path('modelapp/insertinput/insert/',InserView.as_view()),
     path('modelapp/display/',DisplayView.as_view()),
     path('modelapp/deleteinput/',DeleteInputView.as_view()),
     path('modelapp/deleteinput/delete/',DeleteView.as_view()),

@@ -63,7 +63,3 @@ class UpdateView(View):
         prod.save()
         resp = HttpResponse("product updated successfully")
         return resp
-
-
-class InsertView:
-    pass
